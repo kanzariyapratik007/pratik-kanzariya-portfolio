@@ -523,6 +523,91 @@
             opacity: 1;
             transform: translateY(0);
         }
+        /* ============================= */
+        /* 📱 Improved Mobile Optimization */
+        /* ============================= */
+        
+        @media (max-width: 992px) {
+            .portfolio-wrapper {
+                margin: 10px;
+                border-radius: 15px;
+            }
+            .profile-header {
+                padding: 30px 15px;
+            }
+            .profile-img {
+                width: 130px;
+                height: 130px;
+            }
+            .profile-header h1 {
+                font-size: 1.6rem;
+            }
+            .profile-header .title {
+                font-size: 1rem;
+            }
+            .social-links {
+                gap: 12px;
+                flex-wrap: wrap;
+            }
+            .social-links a {
+                width: 40px;
+                height: 40px;
+                font-size: 1.2rem;
+            }
+            .portfolio-nav {
+                padding: 15px 10px;
+            }
+            .portfolio-nav ul {
+                flex-direction: column;
+                gap: 10px;
+            }
+            .portfolio-nav a {
+                font-size: 0.95rem;
+            }
+            .content-section {
+                padding: 30px 15px;
+            }
+            .section-title {
+                font-size: 1.5rem;
+                text-align: center;
+            }
+            .about-text {
+                font-size: 0.95rem;
+                text-align: justify;
+            }
+            .info-grid {
+                grid-template-columns: 1fr;
+            }
+            .skills-container {
+                grid-template-columns: 1fr;
+            }
+            .projects-grid {
+                grid-template-columns: 1fr;
+            }
+            .project-card {
+                margin-bottom: 20px;
+            }
+            .project-links {
+                flex-direction: column;
+            }
+            .project-link {
+                font-size: 0.9rem;
+            }
+            .contact-info {
+                grid-template-columns: 1fr;
+            }
+            .contact-card {
+                padding: 20px;
+            }
+            .portfolio-footer {
+                padding: 20px;
+                font-size: 0.9rem;
+            }
+        }
+        
+        .portfolio-nav a.active {
+            color: #667eea !important;
+        }
     </style>
 </head>
 
@@ -874,10 +959,11 @@
             navLinks.forEach(link => {
                 link.classList.remove('active');
                 if (link.getAttribute('href').includes(current)) {
-                    link.style.color = '#667eea';
+                    link.classList.add('active');
                 } else {
-                    link.style.color = '#333';
+                    link.classList.remove('active');
                 }
+
             });
         });
     </script>
