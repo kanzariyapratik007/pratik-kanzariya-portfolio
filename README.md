@@ -1,6 +1,6 @@
 # Pratik Kanzariya - Django Developer Portfolio
 
-![Portfolio Screenshot](https://via.placeholder.com/1200x600/667eea/ffffff?text=Pratik+Kanzariya+Portfolio)
+
 
 ## 👨‍💻 About Me
 
